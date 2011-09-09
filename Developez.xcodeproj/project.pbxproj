@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0072ADE0F1D0EC500B4A594 /* sfml-system.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A01FB6CB0F07CFF2000AAC7B /* sfml-system.framework */; };
+		A0072ADF0F1D0EC500B4A594 /* sfml-window.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A01FB6CC0F07CFF2000AAC7B /* sfml-window.framework */; };
+		A0072AE00F1D0EC500B4A594 /* sfml-graphics.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = A01FB6CA0F07CFF2000AAC7B /* sfml-graphics.framework */; };
+		A01FB6C90F07CFCE000AAC7B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A01FB6C80F07CFCE000AAC7B /* main.cpp */; };
+		A01FB6CE0F07CFF2000AAC7B /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01FB6CA0F07CFF2000AAC7B /* sfml-graphics.framework */; };
+		A01FB6CF0F07CFF2000AAC7B /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01FB6CB0F07CFF2000AAC7B /* sfml-system.framework */; };
+		A01FB6D00F07CFF2000AAC7B /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01FB6CC0F07CFF2000AAC7B /* sfml-window.framework */; };
+		F04BEB5813FA83E6004CB946 /* fonctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04BEB5713FA83E6004CB946 /* fonctions.cpp */; };
+		F06262E514141AA3001F60C3 /* Cursor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F06262E414141AA3001F60C3 /* Cursor.cpp */; };
+		F0D36CDD1417D4890032154F /* world.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0D36CDC1417D4890032154F /* world.cpp */; };
+		F0D36CE01417F6780032154F /* actionrecord.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0D36CDF1417F6780032154F /* actionrecord.cpp */; };
+		F0D4847E13FC05BD00FAA2C2 /* Kapla.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0D4847D13FC05BD00FAA2C2 /* Kapla.cpp */; };
+		F0F9FBCE13F6F381003CF8BB /* BulletCollision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F9FBCD13F6F381003CF8BB /* BulletCollision.framework */; };
+		F0F9FBD013F6F38B003CF8BB /* BulletDynamics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F9FBCF13F6F38B003CF8BB /* BulletDynamics.framework */; };
+		F0F9FBD213F6F394003CF8BB /* BulletSoftBody.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F9FBD113F6F394003CF8BB /* BulletSoftBody.framework */; };
+		F0F9FBD413F6F438003CF8BB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F9FBD313F6F438003CF8BB /* OpenGL.framework */; };
+		F0F9FBF013F7060F003CF8BB /* LinearMath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F9FBEF13F7060F003CF8BB /* LinearMath.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A0072AF00F1D0EDD00B4A594 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A0072ADE0F1D0EC500B4A594 /* sfml-system.framework in Copy Frameworks */,
+				A0072ADF0F1D0EC500B4A594 /* sfml-window.framework in Copy Frameworks */,
+				A0072AE00F1D0EC500B4A594 /* sfml-graphics.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A01FB6A90F07CF6E000AAC7B /* Developez.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Developez.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01FB6AC0F07CF6E000AAC7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A01FB6C80F07CFCE000AAC7B /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A01FB6CA0F07CFF2000AAC7B /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "/Library/Frameworks/sfml-graphics.framework"; sourceTree = "<absolute>"; };
+		A01FB6CB0F07CFF2000AAC7B /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "/Library/Frameworks/sfml-system.framework"; sourceTree = "<absolute>"; };
+		A01FB6CC0F07CFF2000AAC7B /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "/Library/Frameworks/sfml-window.framework"; sourceTree = "<absolute>"; };
+		A01FB6CD0F07CFF2000AAC7B /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = /Library/Frameworks/SFML.framework; sourceTree = "<absolute>"; };
+		F04BEB5713FA83E6004CB946 /* fonctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fonctions.cpp; sourceTree = "<group>"; };
+		F06262E314141A81001F60C3 /* Cursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cursor.h; sourceTree = "<group>"; };
+		F06262E414141AA3001F60C3 /* Cursor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cursor.cpp; sourceTree = "<group>"; };
+		F0D36CDB1417D1A30032154F /* world.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = world.h; sourceTree = "<group>"; };
+		F0D36CDC1417D4890032154F /* world.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = world.cpp; sourceTree = "<group>"; };
+		F0D36CDE1417F5A00032154F /* actionrecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = actionrecord.h; sourceTree = "<group>"; };
+		F0D36CDF1417F6780032154F /* actionrecord.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = actionrecord.cpp; sourceTree = "<group>"; };
+		F0D4847C13FC05B100FAA2C2 /* Kapla.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kapla.h; sourceTree = "<group>"; };
+		F0D4847D13FC05BD00FAA2C2 /* Kapla.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Kapla.cpp; sourceTree = "<group>"; };
+		F0E49D3413FAAD220053786D /* fonctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fonctions.h; sourceTree = "<group>"; };
+		F0F9FBCD13F6F381003CF8BB /* BulletCollision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BulletCollision.framework; sourceTree = "<group>"; };
+		F0F9FBCF13F6F38B003CF8BB /* BulletDynamics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BulletDynamics.framework; sourceTree = "<group>"; };
+		F0F9FBD113F6F394003CF8BB /* BulletSoftBody.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BulletSoftBody.framework; sourceTree = "<group>"; };
+		F0F9FBD313F6F438003CF8BB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenGL.framework; sourceTree = "<group>"; };
+		F0F9FBEF13F7060F003CF8BB /* LinearMath.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinearMath.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A01FB6A70F07CF6E000AAC7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01FB6CE0F07CFF2000AAC7B /* sfml-graphics.framework in Frameworks */,
+				A01FB6CF0F07CFF2000AAC7B /* sfml-system.framework in Frameworks */,
+				A01FB6D00F07CFF2000AAC7B /* sfml-window.framework in Frameworks */,
+				F0F9FBCE13F6F381003CF8BB /* BulletCollision.framework in Frameworks */,
+				F0F9FBD013F6F38B003CF8BB /* BulletDynamics.framework in Frameworks */,
+				F0F9FBD213F6F394003CF8BB /* BulletSoftBody.framework in Frameworks */,
+				F0F9FBD413F6F438003CF8BB /* OpenGL.framework in Frameworks */,
+				F0F9FBF013F7060F003CF8BB /* LinearMath.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A01FB69A0F07CF63000AAC7B = {
+			isa = PBXGroup;
+			children = (
+				F04BEB5613FA8355004CB946 /* Headers */,
+				A01FB6B20F07CF80000AAC7B /* Sources */,
+				A01FB6B10F07CF7C000AAC7B /* Resources */,
+				A01FB6B00F07CF75000AAC7B /* Frameworks */,
+				A01FB6AA0F07CF6E000AAC7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A01FB6AA0F07CF6E000AAC7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A01FB6A90F07CF6E000AAC7B /* Developez.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A01FB6B00F07CF75000AAC7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0F9FBEF13F7060F003CF8BB /* LinearMath.framework */,
+				F0F9FBD313F6F438003CF8BB /* OpenGL.framework */,
+				F0F9FBD113F6F394003CF8BB /* BulletSoftBody.framework */,
+				F0F9FBCF13F6F38B003CF8BB /* BulletDynamics.framework */,
+				F0F9FBCD13F6F381003CF8BB /* BulletCollision.framework */,
+				A01FB6CD0F07CFF2000AAC7B /* SFML.framework */,
+				A01FB6CB0F07CFF2000AAC7B /* sfml-system.framework */,
+				A01FB6CC0F07CFF2000AAC7B /* sfml-window.framework */,
+				A01FB6CA0F07CFF2000AAC7B /* sfml-graphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A01FB6B10F07CF7C000AAC7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A01FB6AC0F07CF6E000AAC7B /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A01FB6B20F07CF80000AAC7B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F0D36CDF1417F6780032154F /* actionrecord.cpp */,
+				F0D36CDC1417D4890032154F /* world.cpp */,
+				F06262E414141AA3001F60C3 /* Cursor.cpp */,
+				F0D4847D13FC05BD00FAA2C2 /* Kapla.cpp */,
+				A01FB6C80F07CFCE000AAC7B /* main.cpp */,
+				F04BEB5713FA83E6004CB946 /* fonctions.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		F04BEB5613FA8355004CB946 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				F0D36CDE1417F5A00032154F /* actionrecord.h */,
+				F0D36CDB1417D1A30032154F /* world.h */,
+				F06262E314141A81001F60C3 /* Cursor.h */,
+				F0D4847C13FC05B100FAA2C2 /* Kapla.h */,
+				F0E49D3413FAAD220053786D /* fonctions.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A01FB6A80F07CF6E000AAC7B /* Developez */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A01FB6AF0F07CF6F000AAC7B /* Build configuration list for PBXNativeTarget "Developez" */;
+			buildPhases = (
+				A01FB6A50F07CF6E000AAC7B /* Resources */,
+				A01FB6A60F07CF6E000AAC7B /* Sources */,
+				A01FB6A70F07CF6E000AAC7B /* Frameworks */,
+				A0072AF00F1D0EDD00B4A594 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Developez;
+			productName = Developez;
+			productReference = A01FB6A90F07CF6E000AAC7B /* Developez.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A01FB69C0F07CF63000AAC7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+			};
+			buildConfigurationList = A01FB69F0F07CF63000AAC7B /* Build configuration list for PBXProject "Developez" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = A01FB69A0F07CF63000AAC7B;
+			productRefGroup = A01FB6AA0F07CF6E000AAC7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A01FB6A80F07CF6E000AAC7B /* Developez */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A01FB6A50F07CF6E000AAC7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A01FB6A60F07CF6E000AAC7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01FB6C90F07CFCE000AAC7B /* main.cpp in Sources */,
+				F04BEB5813FA83E6004CB946 /* fonctions.cpp in Sources */,
+				F0D4847E13FC05BD00FAA2C2 /* Kapla.cpp in Sources */,
+				F06262E514141AA3001F60C3 /* Cursor.cpp in Sources */,
+				F0D36CDD1417D4890032154F /* world.cpp in Sources */,
+				F0D36CE01417F6780032154F /* actionrecord.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A01FB69D0F07CF63000AAC7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/System/Library/Frameworks,
+					"\"$(SRCROOT)/../bullet-2.78/src\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../bullet-2.78/src\"",
+					"\"$(SRCROOT)/\"",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A01FB69E0F07CF63000AAC7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					/System/Library/Frameworks,
+					"\"$(SRCROOT)/../bullet-2.78/src\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../bullet-2.78/src\"",
+					"\"$(SRCROOT)/\"",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A01FB6AD0F07CF6F000AAC7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Developez;
+			};
+			name = Debug;
+		};
+		A01FB6AE0F07CF6F000AAC7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Developez;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A01FB69F0F07CF63000AAC7B /* Build configuration list for PBXProject "Developez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01FB69D0F07CF63000AAC7B /* Debug */,
+				A01FB69E0F07CF63000AAC7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A01FB6AF0F07CF6F000AAC7B /* Build configuration list for PBXNativeTarget "Developez" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01FB6AD0F07CF6F000AAC7B /* Debug */,
+				A01FB6AE0F07CF6F000AAC7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A01FB69C0F07CF63000AAC7B /* Project object */;
+}

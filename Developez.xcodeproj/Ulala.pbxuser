@@ -1,0 +1,91 @@
+// !$*UTF8*$!
+{
+	A01FB69C0F07CF63000AAC7B /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = F089C35E13F6F2F0006C9815 /* Developez */;
+		activeTarget = A01FB6A80F07CF6E000AAC7B /* Developez */;
+		codeSenseManager = F089C37213F6F2F6006C9815 /* Code sense */;
+		executables = (
+			F089C35E13F6F2F0006C9815 /* Developez */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					356,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 334951152;
+			PBXWorkspaceStateSaveDate = 334951152;
+		};
+		sourceControlManager = F089C37113F6F2F6006C9815 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	A01FB6A80F07CF6E000AAC7B /* Developez */ = {
+		activeExec = 0;
+		executables = (
+			F089C35E13F6F2F0006C9815 /* Developez */,
+		);
+	};
+	F089C35E13F6F2F0006C9815 /* Developez */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Developez;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	F089C37113F6F2F6006C9815 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	F089C37213F6F2F6006C9815 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}

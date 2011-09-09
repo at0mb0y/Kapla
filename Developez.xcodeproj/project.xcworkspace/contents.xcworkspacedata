@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:BulletCollision.framework"
+      name = "BulletCollision.framework">
+      <FileRef
+         location = "group:BulletCollision">
+      </FileRef>
+      <FileRef
+         location = "group:Headers">
+      </FileRef>
+      <FileRef
+         location = "group:Resources">
+      </FileRef>
+      <Group
+         location = "group:Versions"
+         name = "Versions">
+         <Group
+            location = "group:2.78"
+            name = "2.78">
+            <FileRef
+               location = "group:BulletCollision">
+            </FileRef>
+            <Group
+               location = "group:Headers"
+               name = "Headers">
+               <Group
+                  location = "group:BroadphaseCollision"
+                  name = "BroadphaseCollision">
+                  <FileRef
+                     location = "group:btAxisSweep3.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btBroadphaseInterface.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btBroadphaseProxy.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btCollisionAlgorithm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btDbvt.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btDbvtBroadphase.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btDispatcher.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btMultiSapBroadphase.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btOverlappingPairCache.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btOverlappingPairCallback.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btQuantizedBvh.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btSimpleBroadphase.h">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:btBulletCollisionCommon.h">
+               </FileRef>
+               <Group
+                  location = "group:CollisionDispatch"
+                  name = "CollisionDispatch">
+                  <FileRef
+                     location = "group:btActivatingCollisionAlgorithm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btBox2dBox2dCollisionAlgorithm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btBoxBoxCollisionAlgorithm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btBoxBoxDetector.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btCollisionConfiguration.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btCollisionCreateFunc.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btCollisionDispatcher.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btCollisionObject.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btCollisionWorld.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btCompoundCollisionAlgorithm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btConvex2dConvex2dAlgorithm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btConvexConcaveCollisionAlgorithm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btConvexConvexAlgorithm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btConvexPlaneCollisionAlgorithm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btDefaultCollisionConfiguration.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btEmptyCollisionAlgorithm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btGhostObject.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btManifoldResult.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btSimulationIslandManager.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btSphereBoxCollisionAlgorithm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btSphereSphereCollisionAlgorithm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btSphereTriangleCollisionAlgorithm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btUnionFind.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SphereTriangleDetector.h">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:CollisionShapes"
+                  name = "CollisionShapes">
+                  <FileRef
+                     location = "group:btBox2dShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btBoxShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btBvhTriangleMeshShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btCapsuleShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btCollisionMargin.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btCollisionShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btCompoundShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btConcaveShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btConeShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btConvex2dShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btConvexHullShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btConvexInternalShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btConvexPointCloudShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btConvexPolyhedron.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btConvexShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btConvexTriangleMeshShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btCylinderShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btEmptyShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btHeightfieldTerrainShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btMaterial.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btMinkowskiSumShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btMultimaterialTriangleMeshShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btMultiSphereShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btOptimizedBvh.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btPolyhedralConvexShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btScaledBvhTriangleMeshShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btShapeHull.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btSphereShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btStaticPlaneShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btStridingMeshInterface.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btTetrahedronShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btTriangleBuffer.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btTriangleCallback.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btTriangleIndexVertexArray.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btTriangleIndexVertexMaterialArray.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btTriangleInfoMap.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btTriangleMesh.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btTriangleMeshShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btTriangleShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btUniformScalingShape.h">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:Gimpact"
+                  name = "Gimpact">
+                  <FileRef
+                     location = "group:btBoxCollision.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btClipPolygon.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btContactProcessing.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btGenericPoolAllocator.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btGeometryOperations.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btGImpactBvh.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btGImpactCollisionAlgorithm.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btGImpactMassUtil.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btGImpactQuantizedBvh.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btGImpactShape.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btQuantization.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btTriangleShapeEx.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gim_array.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gim_basic_geometry_operations.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gim_bitset.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gim_box_collision.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gim_box_set.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gim_clip_polygon.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gim_contact.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gim_geom_types.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gim_geometry.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gim_hash_table.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gim_linear_math.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gim_math.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gim_memory.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gim_radixsort.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:gim_tri_collision.h">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:NarrowPhaseCollision"
+                  name = "NarrowPhaseCollision">
+                  <FileRef
+                     location = "group:btContinuousConvexCollision.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btConvexCast.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btConvexPenetrationDepthSolver.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btDiscreteCollisionDetectorInterface.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btGjkConvexCast.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btGjkEpa2.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btGjkEpaPenetrationDepthSolver.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btGjkPairDetector.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btManifoldPoint.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btMinkowskiPenetrationDepthSolver.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btPersistentManifold.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btPointCollector.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btPolyhedralContactClipping.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btRaycastCallback.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btSimplexSolverInterface.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btSubSimplexConvexCast.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:btVoronoiSimplexSolver.h">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Resources"
+               name = "Resources">
+               <FileRef
+                  location = "group:Info.plist">
+               </FileRef>
+            </Group>
+         </Group>
+         <FileRef
+            location = "group:Current">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "self:Developez.xcodeproj">
+   </FileRef>
+</Workspace>
