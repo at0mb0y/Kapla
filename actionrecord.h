@@ -6,15 +6,16 @@
 
 class ActionRecord
 {
+    
 	public:
 	
-    record();
+    ActionRecord();
 	//ajoute un kapla dans la structure
-	play();
+	void play();
 	//rejoue la struct à partir d'un point
-	dell();
+	void dell();
 	//retire l'action
-	afficheRecordBar();
+	void afficheRecordBar();
 	private:
 
     

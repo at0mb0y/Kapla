@@ -1,18 +1,23 @@
 #include "actionrecord.h"
 
-class ActionRecord()
+ActionRecord::ActionRecord()
 {
-	public:
 	
-    record();
-	//ajoute un kapla dans la structure
-	play();
-	//rejoue la struct à partir d'un point
-	dell();
-	//retire l'action
-	afficheRecordBar();
-	private:
-
-
 	
+}
+
+//ajoute un kapla dans la structure
+void ActionRecord::play()
+{
+    
+}
+//rejoue la struct à partir d'un point
+void ActionRecord::dell()
+{
+    
+}
+//retire l'action
+void ActionRecord::afficheRecordBar()
+{
+    
 }

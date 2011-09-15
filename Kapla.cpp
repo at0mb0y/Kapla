@@ -1,4 +1,5 @@
 #include "Kapla.h"
+#include "fonctions.h"
 
 Kapla::Kapla():m_id(0),mass(0),m_body(0),m_shape(0),m_MotionState(0),longeur(10),largeur(0),profondeur(10)
 {
@@ -62,7 +63,18 @@ void Kapla::delKapla(btDiscreteDynamicsWorld &m_World)
         m_World.removeRigidBody(m_body);
     }
 
-    
+
+void Kapla::affiche()
+    {
+        // On recupère la matrice OpenGL transformée par Bullet qu'on appliquera à notre boite
+		m_MotionState->m_graphicsWorldTrans.getOpenGLMatrix( matrix );
+		
+		// On affiche notre boite avec les transformations applqiuées grâce à la matrice
+		glPushMatrix();
+		glMultMatrixf( matrix );
+		box(3,1,15);
+		glPopMatrix(); 
+    }
 
 
    

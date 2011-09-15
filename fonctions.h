@@ -2,22 +2,23 @@
 
 #define FONCTION_H_INCLUDED
 // header SFML
+#include <iostream>
 #include <SFML/Window.hpp>
-
+#include <math.h>
 // header Bullet physics
 #include "btBulletDynamicsCommon.h"
 #include "Kapla.h"
-#include "Cursor"
+#include "Cursor.h"
+#include "world.h"
+#include "camera.h"
+#include "actionrecord.h"
+#include <vector>
 
 
-void dropKapla(int x, int y, int z, btScalar& mass);
-/**
- * \brief Fonction qui ajoute un Kapla dans le monde
- * \param nombreRecu  des coordonés W,Y
- * \return btRigid body
- */
 
-void myBox(float x, float y, float z);
+
+
+void box(int x, int y, int z);
 
 /**
  * \brief Fonction qui dessine une boite
@@ -25,14 +26,6 @@ void myBox(float x, float y, float z);
  * \return rien
  */
 
-typedef struct KaplaList KaplaList;
-struct KaplaList{
-    
-    int x,y,z;
-    int ori;
-    int sens;
-    
-};
 
-void initialiserKaplaList (KaplaList* kapla);
+
 #endif // FONCTION_H_INCLUDED

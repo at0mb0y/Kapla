@@ -17,6 +17,7 @@ class Kapla
 	void recordAction();
     void getCoordinate();
     void delKapla(btDiscreteDynamicsWorld &myWorld);
+    void affiche();
 
 	
 	private:

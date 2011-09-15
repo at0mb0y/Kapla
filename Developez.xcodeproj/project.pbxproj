@@ -14,6 +14,7 @@
 		A01FB6CE0F07CFF2000AAC7B /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01FB6CA0F07CFF2000AAC7B /* sfml-graphics.framework */; };
 		A01FB6CF0F07CFF2000AAC7B /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01FB6CB0F07CFF2000AAC7B /* sfml-system.framework */; };
 		A01FB6D00F07CFF2000AAC7B /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01FB6CC0F07CFF2000AAC7B /* sfml-window.framework */; };
+		F0047911141E59C9008395B4 /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0047910141E59C9008395B4 /* camera.cpp */; };
 		F04BEB5813FA83E6004CB946 /* fonctions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04BEB5713FA83E6004CB946 /* fonctions.cpp */; };
 		F06262E514141AA3001F60C3 /* Cursor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F06262E414141AA3001F60C3 /* Cursor.cpp */; };
 		F0D36CDD1417D4890032154F /* world.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0D36CDC1417D4890032154F /* world.cpp */; };
@@ -50,6 +51,8 @@
 		A01FB6CB0F07CFF2000AAC7B /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "/Library/Frameworks/sfml-system.framework"; sourceTree = "<absolute>"; };
 		A01FB6CC0F07CFF2000AAC7B /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "/Library/Frameworks/sfml-window.framework"; sourceTree = "<absolute>"; };
 		A01FB6CD0F07CFF2000AAC7B /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = /Library/Frameworks/SFML.framework; sourceTree = "<absolute>"; };
+		F004790F141E5932008395B4 /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		F0047910141E59C9008395B4 /* camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = camera.cpp; sourceTree = "<group>"; };
 		F04BEB5713FA83E6004CB946 /* fonctions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fonctions.cpp; sourceTree = "<group>"; };
 		F06262E314141A81001F60C3 /* Cursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cursor.h; sourceTree = "<group>"; };
 		F06262E414141AA3001F60C3 /* Cursor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cursor.cpp; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 		A01FB6B20F07CF80000AAC7B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				F0047910141E59C9008395B4 /* camera.cpp */,
 				F0D36CDF1417F6780032154F /* actionrecord.cpp */,
 				F0D36CDC1417D4890032154F /* world.cpp */,
 				F06262E414141AA3001F60C3 /* Cursor.cpp */,
@@ -145,6 +149,7 @@
 		F04BEB5613FA8355004CB946 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				F004790F141E5932008395B4 /* camera.h */,
 				F0D36CDE1417F5A00032154F /* actionrecord.h */,
 				F0D36CDB1417D1A30032154F /* world.h */,
 				F06262E314141A81001F60C3 /* Cursor.h */,
@@ -224,6 +229,7 @@
 				F06262E514141AA3001F60C3 /* Cursor.cpp in Sources */,
 				F0D36CDD1417D4890032154F /* world.cpp in Sources */,
 				F0D36CE01417F6780032154F /* actionrecord.cpp in Sources */,
+				F0047911141E59C9008395B4 /* camera.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

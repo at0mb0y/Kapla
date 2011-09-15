@@ -28,7 +28,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "5"
          endingLineNumber = "5"
-         landmarkName = "Kapla::Kapla (int x, int y, int z, int ori, int sens)"
+         landmarkName = "Kapla::Kapla()"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -42,7 +42,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "39"
          endingLineNumber = "39"
-         landmarkName = "Kapla::dropKapla(btDiscreteDynamicsWorld &amp;m_World)"
+         landmarkName = "Kapla::initiate(int x, int y, int z)"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -58,6 +58,60 @@
          endingLineNumber = "6"
          landmarkName = "World::World()"
          landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "camera.cpp"
+         timestampString = "337614716.669204"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "3"
+         endingLineNumber = "3">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "main.cpp"
+         timestampString = "337710978.277103"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "97"
+         endingLineNumber = "97"
+         landmarkName = "main ( int argc, char **argv )"
+         landmarkType = "7">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "main.cpp"
+         timestampString = "337710978.277103"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "51"
+         endingLineNumber = "51"
+         landmarkName = "main ( int argc, char **argv )"
+         landmarkType = "7">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "main.cpp"
+         timestampString = "337710978.277103"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "123"
+         endingLineNumber = "123"
+         landmarkName = "main ( int argc, char **argv )"
+         landmarkType = "7">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

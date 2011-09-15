@@ -1,6 +1,6 @@
 #include "Cursor.h"
 
-Cursor::Cursor(int x, int y, int z, int ori, int sens)
+Cursor::Cursor():m_x(0),m_y(0),m_z(0),m_ori(0),m_sens(0)
 {
     
     
@@ -8,13 +8,16 @@ Cursor::Cursor(int x, int y, int z, int ori, int sens)
 
 }
 
-void Cursor::set()
+void Cursor::set(unsigned int MouseX, unsigned int MouseY)
 {
+    
+
+    glTranslatef(MouseX, MouseY, 0.f);
     
 }
 	
 //  Une fonction pour afficher une boite à l'aide d'OpenGL
-void Cursor::drawKapla(float x, float y, float z)
+void Cursor::drawKapla(unsigned int x, unsigned int y,unsigned int z)
 {
 glPushMatrix();
 glScalef(x,y,z);

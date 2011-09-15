@@ -3,7 +3,7 @@
 
 
 
-World::World():m_World(0),m_Broadphase(0),m_Dispatcher(0),m_CollisionConfiguration(0),m_SequentialImpulseConstraintSolver(0)
+World::World()
 
 {
 
@@ -28,4 +28,16 @@ World::World():m_World(0),m_Broadphase(0),m_Dispatcher(0),m_CollisionConfigurati
 
 
 }
-
+World::~World()
+{
+    delete m_CollisionConfiguration;
+    delete m_Dispatcher;
+    delete m_Broadphase;
+    delete m_SequentialImpulseConstraintSolver;
+    delete m_World;
+}
+void World::simuStep()
+{
+    
+    m_World->stepSimulation( 0.0001 );
+}

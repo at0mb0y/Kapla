@@ -1,6 +1,7 @@
 #ifndef DEF_CURSOR
 #define DEF_CURSOR
 #include "btBulletDynamicsCommon.h"
+#include <SFML/Window.hpp>
 
 //dessine le kapla en ghost, reçoit les input du clavier et met à jour
 //
@@ -8,15 +9,15 @@ class Cursor
 
 {
 	public:
-    Cursor(int x, int y, int z, int ori, int sens);
-    void drawKapla(int x, int y, int z);
-    void set();
+    Cursor();
+    void drawKapla(unsigned int x, unsigned int y, unsigned int z);
+    void set(unsigned int MouseX, unsigned int MouseY);
 private:
-    int x;
-    int y;
-    int z;
-    int ori;
-    int sens;
+    int m_x;
+    int m_y;
+    int m_z;
+    int m_ori;
+    int m_sens;
 	
 };
 
