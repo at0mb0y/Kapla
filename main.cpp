@@ -49,9 +49,9 @@ int main ( int argc, char **argv )
     //pour simplifier l'initialisation, j'ai pensé réunir la création des différents objets nécessaire dans un class world
     
     //problème pour initialiser le monde, il y a divers objet à générer pour le mettre en place mais ca ne semble pas marcher 
-    World monde;
+    //World monde;
     // déclaration d'un conteneur pour les objet de type Kapla
-    std::vector<Kapla> keva;
+    //std::vector<Kapla> keva;
     
     
 
@@ -165,7 +165,7 @@ int main ( int argc, char **argv )
         if ((trigger)&&!(Espace))
         {
             // ajoute un kapla dans le monde au coordonée et orientation et direction du curseur.
-            keva.push_back(Kapla());
+            //keva.push_back(Kapla());
         
             trigger=false;
         }else if ((Espace)&&!(trigger))
@@ -178,7 +178,7 @@ int main ( int argc, char **argv )
         
 		// Update dynamics
 
-		        monde.simuStep();
+		        //monde.simuStep();
 
 		
 		camcam.display();

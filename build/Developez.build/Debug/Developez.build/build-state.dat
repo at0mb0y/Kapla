@@ -1,7 +1,7 @@
 TDevelopez
 v7
 r0
-t338802113.505645
+t338802592.596974
 cCheck dependencies
 cProcessInfoPlistFile /Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app/Contents/Info.plist Info.plist
 cCompileC build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/main.o /Users/J04KIM/COMPIL/Kapla/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
@@ -11,9 +11,11 @@ cCompileC build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/Curs
 cCompileC build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/world.o /Users/J04KIM/COMPIL/Kapla/world.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
 cCompileC build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/actionrecord.o /Users/J04KIM/COMPIL/Kapla/actionrecord.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
 cCompileC build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/camera.o /Users/J04KIM/COMPIL/Kapla/camera.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cLd /Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app/Contents/MacOS/Developez normal x86_64
 cPBXCp build/Debug/Developez.app/Contents/Frameworks/sfml-system.framework /Library/Frameworks/sfml-system.framework
 cPBXCp build/Debug/Developez.app/Contents/Frameworks/sfml-window.framework /Library/Frameworks/sfml-window.framework
 cPBXCp build/Debug/Developez.app/Contents/Frameworks/sfml-graphics.framework /Library/Frameworks/sfml-graphics.framework
+cTouch /Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app
 
 N/Developer/SDKs/MacOSX10.6.sdk
 c000000004A769DAB00000000000000EE
@@ -164,7 +166,7 @@ s434
 i"btBulletDynamicsCommon.h"
 
 N/Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app
-t1317108379
+t1317109783
 s102
 
 N/Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app/Contents/Frameworks/sfml-graphics.framework
@@ -184,8 +186,8 @@ t1317108375
 s1006
 
 N/Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app/Contents/MacOS/Developez
-t1317108379
-s85232
+t1317109783
+s74096
 
 N/Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app/Contents/PkgInfo
 t1317108375
@@ -201,8 +203,8 @@ t1317108375
 s719
 
 N/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/Kapla.o
-t2
-s0
+t1317109723
+s244164
 
 N/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/actionrecord.o
 t1317108378
@@ -213,12 +215,12 @@ t1317109033
 s140696
 
 N/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/fonctions.o
-t2
-s0
+t1317109721
+s141096
 
 N/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/main.o
-t2
-s0
+t1317109783
+s185484
 
 N/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/world.o
 t1317108378
@@ -247,9 +249,9 @@ s990
 i"fonctions.h"
 
 N/Users/J04KIM/COMPIL/Kapla/fonctions.h
-c000000004E817DA00000000000000308
-t1317109152
-s776
+c000000004E817FD8000000000000026B
+t1317109720
+s619
 i"btBulletDynamicsCommon.h"
 i<stdio.h>
 i<stdlib.h>
@@ -265,9 +267,9 @@ i"camera.h"
 i<vector>
 
 N/Users/J04KIM/COMPIL/Kapla/main.cpp
-c000000004E817DCE0000000000001673
-t1317109198
-s5747
+c000000004E818016000000000000167B
+t1317109782
+s5755
 i"fonctions.h"
 
 N/Users/J04KIM/COMPIL/Kapla/world.cpp
@@ -1090,7 +1092,7 @@ s634
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies338802111#338802111#0(0"0(0#1#0"8620506208#0"0#
+lSLF07#2@18"Check dependencies338802592#338802592#0(0"0(0#1#0"8620975040#0"0#
 
 CCompileC build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/Cursor.o /Users/J04KIM/COMPIL/Kapla/Cursor.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
 s338801831.100048
@@ -1106,9 +1108,9 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@45"Compile /Users/J04KIM/COMPIL/Kapla/Cursor.cpp338801831#338801832#0(0"0(0#0#37"/Users/J04KIM/COMPIL/Kapla/Cursor.cpp8621494400#1381"    cd /Users/J04KIM/COMPIL/Kapla    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-generated-files.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-own-target-headers.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-all-target-headers.hmap -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-project-headers.hmap -F/Users/J04KIM/COMPIL/Kapla/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks -F/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -F/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Debug/include -I/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -I/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources/x86_64 -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources -c /Users/J04KIM/COMPIL/Kapla/Cursor.cpp -o /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/Cursor.o0#
 
 CCompileC build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/Kapla.o /Users/J04KIM/COMPIL/Kapla/Kapla.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-s338802112.369932
-e338802113.505310
-r0
+s338802521.920610
+e338802523.054413
+r1
 xCompileC
 xbuild/Developez.build/Debug/Developez.build/Objects-normal/x86_64/Kapla.o
 x/Users/J04KIM/COMPIL/Kapla/Kapla.cpp
@@ -1116,9 +1118,7 @@ xnormal
 xx86_64
 xc++
 xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/J04KIM/COMPIL/Kapla/Kapla.cpp:2:
-o/Users/J04KIM/COMPIL/Kapla/fonctions.h:59:2: error: #endif without #if
-lSLF07#2@44"Compile /Users/J04KIM/COMPIL/Kapla/Kapla.cpp338802112#338802113#0(133"In file included from /Users/J04KIM/COMPIL/Kapla/Kapla.cpp:2:/Users/J04KIM/COMPIL/Kapla/fonctions.h:59:2: error: #endif without #if1(4@18"#endif without #if338802112#62#71#2(7@58"In file included from /Users/J04KIM/COMPIL/Kapla/Kapla.cpp338802112#18446744073709551615#0#0(6@36"/Users/J04KIM/COMPIL/Kapla/Kapla.cpp338800682#2#0#2#0#0"0(13@60"#endif without #if in /Users/J04KIM/COMPIL/Kapla/fonctions.h338802112#18446744073709551615#0#0(6@38"/Users/J04KIM/COMPIL/Kapla/fonctions.h338801952#59#0#59#0#0"0(6@38"/Users/J04KIM/COMPIL/Kapla/fonctions.h338801952#59#0#59#0#0"0(0#0#36"/Users/J04KIM/COMPIL/Kapla/Kapla.cpp8611736672#1379"    cd /Users/J04KIM/COMPIL/Kapla    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-generated-files.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-own-target-headers.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-all-target-headers.hmap -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-project-headers.hmap -F/Users/J04KIM/COMPIL/Kapla/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks -F/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -F/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Debug/include -I/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -I/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources/x86_64 -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources -c /Users/J04KIM/COMPIL/Kapla/Kapla.cpp -o /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/Kapla.o1#
+lSLF07#2@44"Compile /Users/J04KIM/COMPIL/Kapla/Kapla.cpp338802521#338802523#0(0"0(0#0#36"/Users/J04KIM/COMPIL/Kapla/Kapla.cpp8607947872#1379"    cd /Users/J04KIM/COMPIL/Kapla    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-generated-files.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-own-target-headers.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-all-target-headers.hmap -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-project-headers.hmap -F/Users/J04KIM/COMPIL/Kapla/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks -F/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -F/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Debug/include -I/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -I/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources/x86_64 -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources -c /Users/J04KIM/COMPIL/Kapla/Kapla.cpp -o /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/Kapla.o0#
 
 CCompileC build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/actionrecord.o /Users/J04KIM/COMPIL/Kapla/actionrecord.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
 s338801177.674475
@@ -1147,9 +1147,9 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@45"Compile /Users/J04KIM/COMPIL/Kapla/camera.cpp338801832#338801833#0(0"0(0#0#37"/Users/J04KIM/COMPIL/Kapla/camera.cpp8619892768#1381"    cd /Users/J04KIM/COMPIL/Kapla    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-generated-files.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-own-target-headers.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-all-target-headers.hmap -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-project-headers.hmap -F/Users/J04KIM/COMPIL/Kapla/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks -F/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -F/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Debug/include -I/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -I/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources/x86_64 -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources -c /Users/J04KIM/COMPIL/Kapla/camera.cpp -o /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/camera.o0#
 
 CCompileC build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/fonctions.o /Users/J04KIM/COMPIL/Kapla/fonctions.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-s338802111.038506
-e338802112.369834
-r0
+s338802520.514012
+e338802521.920509
+r1
 xCompileC
 xbuild/Developez.build/Debug/Developez.build/Objects-normal/x86_64/fonctions.o
 x/Users/J04KIM/COMPIL/Kapla/fonctions.cpp
@@ -1157,14 +1157,12 @@ xnormal
 xx86_64
 xc++
 xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/J04KIM/COMPIL/Kapla/fonctions.cpp:1:
-o/Users/J04KIM/COMPIL/Kapla/fonctions.h:59:2: error: #endif without #if
-lSLF07#2@48"Compile /Users/J04KIM/COMPIL/Kapla/fonctions.cpp338802111#338802112#0(137"In file included from /Users/J04KIM/COMPIL/Kapla/fonctions.cpp:1:/Users/J04KIM/COMPIL/Kapla/fonctions.h:59:2: error: #endif without #if1(4@18"#endif without #if338802111#66#71#2(7@62"In file included from /Users/J04KIM/COMPIL/Kapla/fonctions.cpp338802111#18446744073709551615#0#0(6@40"/Users/J04KIM/COMPIL/Kapla/fonctions.cpp338800683#1#0#1#0#0"0(13@60"#endif without #if in /Users/J04KIM/COMPIL/Kapla/fonctions.h338802111#18446744073709551615#0#0(6@38"/Users/J04KIM/COMPIL/Kapla/fonctions.h338801952#59#0#59#0#0"0(6@38"/Users/J04KIM/COMPIL/Kapla/fonctions.h338801952#59#0#59#0#0"0(0#0#40"/Users/J04KIM/COMPIL/Kapla/fonctions.cpp8621990112#1387"    cd /Users/J04KIM/COMPIL/Kapla    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-generated-files.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-own-target-headers.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-all-target-headers.hmap -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-project-headers.hmap -F/Users/J04KIM/COMPIL/Kapla/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks -F/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -F/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Debug/include -I/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -I/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources/x86_64 -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources -c /Users/J04KIM/COMPIL/Kapla/fonctions.cpp -o /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/fonctions.o1#
+lSLF07#2@48"Compile /Users/J04KIM/COMPIL/Kapla/fonctions.cpp338802520#338802521#0(0"0(0#0#40"/Users/J04KIM/COMPIL/Kapla/fonctions.cpp8620215264#1387"    cd /Users/J04KIM/COMPIL/Kapla    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-generated-files.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-own-target-headers.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-all-target-headers.hmap -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-project-headers.hmap -F/Users/J04KIM/COMPIL/Kapla/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks -F/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -F/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Debug/include -I/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -I/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources/x86_64 -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources -c /Users/J04KIM/COMPIL/Kapla/fonctions.cpp -o /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/fonctions.o0#
 
 CCompileC build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/main.o /Users/J04KIM/COMPIL/Kapla/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-s338802111.037426
-e338802112.424340
-r0
+s338802582.467121
+e338802583.520733
+r1
 xCompileC
 xbuild/Developez.build/Debug/Developez.build/Objects-normal/x86_64/main.o
 x/Users/J04KIM/COMPIL/Kapla/main.cpp
@@ -1172,9 +1170,7 @@ xnormal
 xx86_64
 xc++
 xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/J04KIM/COMPIL/Kapla/main.cpp:8:
-o/Users/J04KIM/COMPIL/Kapla/fonctions.h:59:2: error: #endif without #if
-lSLF07#2@43"Compile /Users/J04KIM/COMPIL/Kapla/main.cpp338802111#338802112#0(132"In file included from /Users/J04KIM/COMPIL/Kapla/main.cpp:8:/Users/J04KIM/COMPIL/Kapla/fonctions.h:59:2: error: #endif without #if1(4@18"#endif without #if338802111#61#71#2(7@57"In file included from /Users/J04KIM/COMPIL/Kapla/main.cpp338802111#18446744073709551615#0#0(6@35"/Users/J04KIM/COMPIL/Kapla/main.cpp338801998#8#0#8#0#0"0(13@60"#endif without #if in /Users/J04KIM/COMPIL/Kapla/fonctions.h338802111#18446744073709551615#0#0(6@38"/Users/J04KIM/COMPIL/Kapla/fonctions.h338801952#59#0#59#0#0"0(6@38"/Users/J04KIM/COMPIL/Kapla/fonctions.h338801952#59#0#59#0#0"0(0#0#35"/Users/J04KIM/COMPIL/Kapla/main.cpp8621771264#1377"    cd /Users/J04KIM/COMPIL/Kapla    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-generated-files.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-own-target-headers.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-all-target-headers.hmap -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-project-headers.hmap -F/Users/J04KIM/COMPIL/Kapla/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks -F/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -F/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Debug/include -I/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -I/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources/x86_64 -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources -c /Users/J04KIM/COMPIL/Kapla/main.cpp -o /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/main.o1#
+lSLF07#2@43"Compile /Users/J04KIM/COMPIL/Kapla/main.cpp338802582#338802583#0(0"0(0#0#35"/Users/J04KIM/COMPIL/Kapla/main.cpp8619909856#1377"    cd /Users/J04KIM/COMPIL/Kapla    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-generated-files.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-own-target-headers.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-all-target-headers.hmap -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-project-headers.hmap -F/Users/J04KIM/COMPIL/Kapla/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks -F/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -F/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Debug/include -I/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -I/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources/x86_64 -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources -c /Users/J04KIM/COMPIL/Kapla/main.cpp -o /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/main.o0#
 
 CCompileC build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/world.o /Users/J04KIM/COMPIL/Kapla/world.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
 s338801177.635096
@@ -1190,14 +1186,14 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@44"Compile /Users/J04KIM/COMPIL/Kapla/world.cpp338801177#338801178#0(0"0(0#0#36"/Users/J04KIM/COMPIL/Kapla/world.cpp8611913408#1379"    cd /Users/J04KIM/COMPIL/Kapla    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-generated-files.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-own-target-headers.hmap -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-all-target-headers.hmap -iquote /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Developez-project-headers.hmap -F/Users/J04KIM/COMPIL/Kapla/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks -F/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -F/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Debug/include -I/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -I/Users/J04KIM/COMPIL/Kapla -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources/x86_64 -I/Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/DerivedSources -c /Users/J04KIM/COMPIL/Kapla/world.cpp -o /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/world.o0#
 
 CLd /Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app/Contents/MacOS/Developez normal x86_64
-s338801179.431443
-e338801179.528295
+s338802583.521237
+e338802583.562202
 r1
 xLd
 x/Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app/Contents/MacOS/Developez
 xnormal
 xx86_64
-lSLF07#2@82"Link /Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app/Contents/MacOS/Developez338801179#338801179#0(0"0(0#0#0"8612246848#810"    cd /Users/J04KIM/COMPIL/Kapla    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/J04KIM/COMPIL/Kapla/build/Debug -F/Users/J04KIM/COMPIL/Kapla/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks -F/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -F/Users/J04KIM/COMPIL/Kapla -filelist /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/Developez.LinkFileList -mmacosx-version-min=10.6 -framework sfml-graphics -framework sfml-system -framework sfml-window -framework BulletCollision -framework BulletDynamics -framework BulletSoftBody -framework OpenGL -framework LinearMath -prebind -o /Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app/Contents/MacOS/Developez0#
+lSLF07#2@82"Link /Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app/Contents/MacOS/Developez338802583#338802583#0(0"0(0#0#0"8621668832#810"    cd /Users/J04KIM/COMPIL/Kapla    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/J04KIM/COMPIL/Kapla/build/Debug -F/Users/J04KIM/COMPIL/Kapla/build/Debug -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks -F/Users/J04KIM/COMPIL/Kapla/../bullet-2.78/src -F/Users/J04KIM/COMPIL/Kapla -filelist /Users/J04KIM/COMPIL/Kapla/build/Developez.build/Debug/Developez.build/Objects-normal/x86_64/Developez.LinkFileList -mmacosx-version-min=10.6 -framework sfml-graphics -framework sfml-system -framework sfml-window -framework BulletCollision -framework BulletDynamics -framework BulletSoftBody -framework OpenGL -framework LinearMath -prebind -o /Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app/Contents/MacOS/Developez0#
 
 CPBXCp build/Debug/Developez.app/Contents/Frameworks/sfml-graphics.framework /Library/Frameworks/sfml-graphics.framework
 s338801179.529803
@@ -1236,10 +1232,10 @@ xInfo.plist
 lSLF07#2@18"Process Info.plist338801175#338801175#0(0"0(0#0#37"/Users/J04KIM/COMPIL/Kapla/Info.plist8612230784#270"    cd /Users/J04KIM/COMPIL/Kapla    builtin-infoPlistUtility Info.plist -genpkginfo /Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app/Contents/Info.plist0#
 
 CTouch /Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app
-s338801179.699067
-e338801179.702790
+s338802583.562516
+e338802583.565397
 r1
 xTouch
 x/Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app
-lSLF07#2@58"Touch /Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app338801179#338801179#0(0"0(0#0#0"8612434784#109"    cd /Users/J04KIM/COMPIL/Kapla    /usr/bin/touch -c /Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app0#
+lSLF07#2@58"Touch /Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app338802583#338802583#0(0"0(0#0#0"8621074944#109"    cd /Users/J04KIM/COMPIL/Kapla    /usr/bin/touch -c /Users/J04KIM/COMPIL/Kapla/build/Debug/Developez.app0#
 

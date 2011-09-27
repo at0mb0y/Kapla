@@ -40,19 +40,6 @@ void box(int x, int y, int z);
 
 
 
-#endif // FONCTION_H_INCLUDED
-
-
-
-
-
-void box(int x, int y, int z);
-
-/**
- * \brief Fonction qui dessine une boite
- * \param dimension X,YZ
- * \return rien
- */
 
 
 
