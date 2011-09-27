@@ -12,43 +12,40 @@
 sf::Window	Application;
 
 
+using namespace std;
 
 int main ( int argc, char **argv )
 {
 	// On crée notre fenâtre grâce à SFML
 	Application.Create( sf::VideoMode( 800, 500, 32 ), "SFML : Bullet physics", sf::Style::Titlebar | sf::Style::Resize | sf::Style::Close );
 	
-    //Variable pour calculer le delta de déplacement de la souris quand les clicks droit et gauche de la souris sont enfoncé pour manipuler la caméra
-    unsigned int previousX, previousY;
-    // Pour déclancher la chute d'un seul kapla quand la touche Espace est relachée
+	// Create a clock for measuring time elapsed
+    sf::Clock montre;
+	
+	// Pour déclancher la chute d'un seul kapla quand la touche Espace est relachée
 	bool trigger = 0; 
-    double deltaX = 0;
-    double deltaY = 0;
 	
-	/// Initialisation d'OpenGL
+	unsigned int windowsWidth = Application.GetWidth();
+    unsigned int windowsHeight = Application.GetHeight();
+    
+    
+    int startPointX(0),startPointY(0);
+    float deltaX(0),deltaY(0),prevDeltaX(1),prevDeltaY(1);
+    int   MouseX(0);
+    int   MouseY(0);
+    bool show = true;
 	
-	// On active la lumière 0
-	glEnable(GL_LIGHT0);
-    glEnable(GL_LIGHTING);
 	
-	// Quelques autres options OpenGL
-	glEnable(GL_DEPTH_TEST);
-	glEnable(GL_CULL_FACE);
-	glEnable(GL_COLOR_MATERIAL);
-	glEnable(GL_NORMALIZE);
-	glEnable(GL_COLOR);
-	
-	// Couleur de fond d'écran
-    glClearColor(0.7,0.7,0.7,0);
     //On initialise une caméra qui sera placé par défaut par le constructeur
-    Camera camcam;
-    
-	// l'espace d'affichage
-	glViewport( 0, 0, 800, 500 );
-    
-    // une instance de curseur en forme de kapla qui se déplace au dessus de la construction, il peut être retourné pour avoir une des 3 surfaces différentes face au sol. On peut orienter l'angle du kapla dans le plan du sol
-	Cursor cursor;
-    //crée un "monde" Bullet, nécessaire pour mettre les kaplas et les faire intéragir. Pour fonctionner plusieur doivent être créés pour que "btDiscreteDynamicWorld" crée un objet world dans lequel ajouter les objets Kapla.
+    Camera camcam(110,60.0,60.0);
+    Cursor cursor;
+	bool test = false;
+	
+    float time;
+	
+	// pour avoir les infos clavier en temps réel
+	const sf::Input& Input = Application.GetInput();    
+	//crée un "monde" Bullet, nécessaire pour mettre les kaplas et les faire intéragir. Pour fonctionner plusieur doivent être créés pour que "btDiscreteDynamicWorld" crée un objet world dans lequel ajouter les objets Kapla.
     //pour simplifier l'initialisation, j'ai pensé réunir la création des différents objets nécessaire dans un class world
     
     //problème pour initialiser le monde, il y a divers objet à générer pour le mettre en place mais ca ne semble pas marcher 
@@ -59,16 +56,96 @@ int main ( int argc, char **argv )
     
 
  // pour avoir les infos clavier en temps réel
-	const sf::Input& Input = Application.GetInput();
+	
 	// Notre boucle d'affichage
 	while(Application.IsOpened() )
 	{
-
+        Application.ShowMouseCursor (false);
         // référence vers l'entrée associée à une fenêtre (pour récupérer les donnés clavier en temps réel
         
         sf::Event Event;
+        //Utilise les flêche pour déplacer le Kapla qui va être laché
+        // Get some useless input states, just to illustrate the tutorial
+        bool         LeftKeyDown     = Input.IsKeyDown(sf::Key::Left);
+        bool         RightKeyDown     = Input.IsKeyDown(sf::Key::Right);
+        bool         UpKeyDown     = Input.IsKeyDown(sf::Key::Up);
+        bool         DownKeyDown     = Input.IsKeyDown(sf::Key::Down);
+        
+        bool         RightButtonDown = Input.IsMouseButtonDown(sf::Mouse::Right);
+        bool         LeftButtonDown = Input.IsMouseButtonDown(sf::Mouse::Left);
+        bool         Espace     = Input.IsKeyDown(sf::Key::Space);
+        bool         Shift     = Input.IsKeyDown(sf::Key::LShift);
+        MouseX  =   Input.GetMouseX() ;
+        MouseY  =   Input.GetMouseY() ;
+        
+        if (LeftButtonDown) 
+        {
+			if (show ) 
+			{
+				montre.Reset();
+				startPointY = MouseY;
+				startPointX = MouseX;
+                //cout<< "start point" <<startPointX<< endl;
+				
+				show = false;
+			}
+			time = montre.GetElapsedTime();
+            //cout<< time << endl;
+			
+			if (time > 0.02) 
+			{
+                
+				deltaX = ((MouseX-startPointX)/50);
+                
+				deltaY = ((MouseY-startPointY)/50);
+				//show = true;
+                cout<< deltaX<< endl;
+				if ((prevDeltaX != deltaX)||(prevDeltaY != deltaY)) {
+					camcam.tumble(deltaX/50,deltaY/50);
+					montre.Reset();
+					prevDeltaX = deltaX;
+					prevDeltaY = deltaY;
+					
+				}
+            }
+            
+        }else
+        {
+            show = true;
+            cursor.set((MouseX - windowsWidth/2), (MouseY - windowsHeight/2));
+        }
+        
+        if (Shift) {
+            test=true; 
+        }else{
+            test=false;
+        }
+        
+        
+		
+        if (LeftKeyDown) {
+            camcam.tumble(0.005, 0);
+            LeftKeyDown = false;
+        }
+        if (RightKeyDown) {
+            camcam.tumble(-0.005, 0);
+            RightKeyDown = false;
+        }
+        if (UpKeyDown) {
+            camcam.tumble(0, 0.005);
+        }
+        if (DownKeyDown) {
+            camcam.tumble(0, -0.005);
+        }
+        //unsigned int delta =mouseT3 - mouseT1;
+        //cout << delta<< endl;
+        
+        
+        
+        
         while (Application.GetEvent(Event))
         {
+            
             if (Event.Type == sf::Event::Resized)
                 glViewport(0, 0, Event.Size.Width, Event.Size.Height);
             // Fenêtre fermée
@@ -79,57 +156,9 @@ int main ( int argc, char **argv )
             if ((Event.Type == sf::Event::KeyPressed) && (Event.Key.Code == sf::Key::Escape))
                 Application.Close();
         }
-            //Utilise les flêche pour déplacer le Kapla qui va être laché
-            // Get some useless input states, just to illustrate the tutorial
-            bool         LeftKeyDown     = Input.IsKeyDown(sf::Key::Left);
-            bool         RightKeyDown     = Input.IsKeyDown(sf::Key::Right);
-            bool         UpKeyDown     = Input.IsKeyDown(sf::Key::Up);
-            bool         DownKeyDown     = Input.IsKeyDown(sf::Key::Down);
-            bool         RightButtonDown = Input.IsMouseButtonDown(sf::Mouse::Right);
-            bool         LeftButtonDown = Input.IsMouseButtonDown(sf::Mouse::Left);
-            bool         Espace     = Input.IsKeyDown(sf::Key::Space);
-
-            unsigned int MouseX          = Input.GetMouseX();
-            unsigned int MouseY          = Input.GetMouseY();
-        
-       // en approchant le curseur Kapla du bord la caméra dézoom pour laisser voir tous les Kapla (je présume que la souris est en coordonée absolue par rapport à la fenêtre avec le 0 en haut à gauche.
-        if (MouseX<20) {
-
-            camcam.extendScene(MouseX,0.0,0.0,0.0);
-        }
-        else if (MouseX > (Event.Size.Width - 20)) {
-            camcam.extendScene(0.0,(MouseX-(Event.Size.Width - 20)),0.0,0.0);
-        }
-        
-        
-        if (MouseY<20) {
-            
-            camcam.extendScene(0.0, 0.0,MouseX,0.0);
-        }else if (MouseY > (Event.Size.Height - 20)) {
-            camcam.extendScene(0.0,0.0,0.0,(MouseY-(Event.Size.Height - 20)));
-        }
-        
-        //Tant que la souris bouge la souris bouge
-        
-        while ((previousY=!MouseY)||(previousX=!MouseX))
-        {
-            //si les deux boutons sont enfoncés
-            if ((RightButtonDown)&&(LeftButtonDown))
-            {
-
-                //utiliser le delta de déplacement pour déplacer la caméra autour de la scène 
-            deltaX = MouseX - previousX;
-            deltaY = MouseY - previousY;
-            
-            camcam.set(deltaX,deltaY);
-            }
-            
-        }
-        //NEED convertiseur coord souris -> coord du plan visible par la caméra
-        // le déplacement sur le plan de la fenêtre est proportionel à celui du plan de construction
-        cursor.set(MouseX, MouseY);
-        // dessin  le curseur
-        cursor.drawKapla(5,15,1); 
+		
+        Application.SetActive();
+		
         
         
         //touche espace enfoncée et relachée
@@ -138,14 +167,13 @@ int main ( int argc, char **argv )
             // ajoute un kapla dans le monde au coordonée et orientation et direction du curseur.
             keva.push_back(Kapla());
         
-            trigger=0;
+            trigger=false;
         }else if ((Espace)&&!(trigger))
         {
-            trigger=1;
+            trigger=true;
         }                
                                      
-            previousX=MouseX;
-            previousY=MouseY; 
+
 
         
 		// Update dynamics
@@ -153,10 +181,23 @@ int main ( int argc, char **argv )
 		        monde.simuStep();
 
 		
-		// On a	ffiche le sol;
-		box(10,1,10);
+		camcam.display();
+        
+        cursor.drawKapla(15, 3, 1);
+        
+        glPushMatrix();
+		glTranslatef(20, 0, 0);
+		box(1,1,1);
+		glPopMatrix();
 		
-
+		// On a	ffiche le sol;
+        if (test==true)
+        {
+			box(100,100,1);    
+        }
+		
+		
+        
 		
 		// swap buffers, etc
 		Application.Display();

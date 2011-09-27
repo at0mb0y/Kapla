@@ -8,10 +8,11 @@
 class Cursor
 
 {
-	public:
+public:
     Cursor();
     void drawKapla(unsigned int x, unsigned int y, unsigned int z);
-    void set(unsigned int MouseX, unsigned int MouseY);
+	
+    void set(int MouseX, int MouseY);
 private:
     int m_x;
     int m_y;

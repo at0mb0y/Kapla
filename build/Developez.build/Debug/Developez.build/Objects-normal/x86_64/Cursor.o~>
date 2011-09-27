@@ -1,0 +1,2 @@
+/Users/J04KIM/COMPIL/Kapla/Cursor.cpp:11: error: prototype for 'void Cursor::set(int, int)' does not match any in class 'Cursor'
+/Users/J04KIM/COMPIL/Kapla/Cursor.h:14: error: candidate is: void Cursor::set(unsigned int, unsigned int)

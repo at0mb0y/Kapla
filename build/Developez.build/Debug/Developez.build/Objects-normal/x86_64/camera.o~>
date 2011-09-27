@@ -1,0 +1,81 @@
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: prototype for 'Camera::Camera(float, float, float)' does not match any in class 'Camera'
+/Users/J04KIM/COMPIL/Kapla/camera.h:14: error: candidates are: Camera::Camera(const Camera&)
+/Users/J04KIM/COMPIL/Kapla/camera.h:16: error:                 Camera::Camera()
+/Users/J04KIM/COMPIL/Kapla/camera.cpp: In constructor 'Camera::Camera(float, float, float)':
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'm_eyeRadius'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'm_radianXY'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'm_radianZ'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'm_fromX'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'm_fromY'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'm_fromZ'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'm_toX'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'm_toY'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'm_toZ'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'PI'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'm_upX'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'm_upY'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'm_upZ'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'pointPrince'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: 'm_fromX' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: 'm_fromY' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: 'm_fromZ' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'pointOeil'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: 'm_toX' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: 'm_toY' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: 'm_toZ' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: class 'Camera' does not have any field named 'dist'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: 'pointPrince' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:4: error: 'pointOeil' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:28: error: 'updateProjection' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp: At global scope:
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:34: error: prototype for 'void Camera::set()' does not match any in class 'Camera'
+/Users/J04KIM/COMPIL/Kapla/camera.h:17: error: candidate is: void Camera::set(unsigned int, unsigned int)
+/Users/J04KIM/COMPIL/Kapla/camera.cpp: In member function 'void Camera::set()':
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:36: error: 'm_fromX' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:37: error: 'm_fromY' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:38: error: 'm_fromZ' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp: At global scope:
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:42: error: prototype for 'void Camera::set(double, double, double)' does not match any in class 'Camera'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:34: error: candidates are: void Camera::set()
+/Users/J04KIM/COMPIL/Kapla/camera.h:17: error:                 void Camera::set(unsigned int, unsigned int)
+/Users/J04KIM/COMPIL/Kapla/camera.cpp: In member function 'void Camera::set(double, double, double)':
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:46: error: 'm_fromX' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:47: error: 'm_fromY' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:48: error: 'm_fromZ' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp: At global scope:
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:57: error: no 'void Camera::setByPolar(float, float, float)' member function declared in class 'Camera'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp: In member function 'void Camera::setByPolar(float, float, float)':
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:60: error: 'm_eyeRadius' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:61: error: 'm_radianXY' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:62: error: 'm_radianZ' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:63: error: 'updateProjection' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp: At global scope:
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:65: error: no 'void Camera::display()' member function declared in class 'Camera'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp: In member function 'void Camera::display()':
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:68: error: 'm_radianXY' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:70: error: 'PI' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:71: error: 'PI' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:95: error: 'm_upX' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:96: error: 'm_upY' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:97: error: 'm_upZ' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:99: error: 'm_fromX' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:99: error: 'm_eyeRadius' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:99: error: 'm_radianZ' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:99: error: 'm_radianXY' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:100: error: 'm_fromY' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:101: error: 'm_fromZ' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:102: error: 'm_toX' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:103: error: 'm_toY' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:104: error: 'm_toZ' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:114: error: 'pointPrince' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:115: error: 'pointOeil' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:116: error: 'dist' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp: At global scope:
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:126: error: no 'void Camera::tumble(float, float)' member function declared in class 'Camera'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp: In member function 'void Camera::tumble(float, float)':
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:128: error: 'm_radianXY' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:128: error: 'dist' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:129: error: 'm_radianZ' was not declared in this scope
+/Users/J04KIM/COMPIL/Kapla/camera.cpp: At global scope:
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:133: error: no 'void Camera::zoom(float)' member function declared in class 'Camera'
+/Users/J04KIM/COMPIL/Kapla/camera.cpp:138: error: no 'void Camera::updateProjection()' member function declared in class 'Camera'
