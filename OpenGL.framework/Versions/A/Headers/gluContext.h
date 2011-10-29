@@ -38,7 +38,7 @@ extern void gluOrtho2DCTX(              struct _CGLContextObject *ctx, GLdouble 
 extern void gluPerspectiveCTX(          struct _CGLContextObject *ctx, GLdouble fovy, GLdouble aspect, GLdouble zNear, GLdouble zFar);
 extern void gluPickMatrixCTX(           struct _CGLContextObject *ctx, GLdouble x, GLdouble y, GLdouble delX, GLdouble delY, GLint *viewport);
 extern GLint gluScaleImageCTX(          struct _CGLContextObject *ctx, GLenum format, GLsizei wIn, GLsizei hIn, GLenum typeIn, const void *dataIn,
-	GLsizei wOut, GLsizei hOut, GLenum typeOut, void* dataOut);      
+	GLsizei wOut, GLsizei hOut, GLenum typeOut, void* dataOut);
 
 
 #ifdef __cplusplus

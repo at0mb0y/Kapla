@@ -7,7 +7,7 @@
 **
 ***************************************************************************************************/
 
-// Credits: The Clock class was inspired by the Timer classes in 
+// Credits: The Clock class was inspired by the Timer classes in
 // Ogre (www.ogre3d.org).
 
 
@@ -45,11 +45,11 @@ public:
 	/// Resets the initial reference time.
 	void reset();
 
-	/// Returns the time in ms since the last call to reset or since 
+	/// Returns the time in ms since the last call to reset or since
 	/// the btClock was created.
 	unsigned long int getTimeMilliseconds();
 
-	/// Returns the time in us since the last call to reset or since 
+	/// Returns the time in us since the last call to reset or since
 	/// the Clock was created.
 	unsigned long int getTimeMicroseconds();
 private:
@@ -146,10 +146,10 @@ public:
 	static	int						Get_Frame_Count_Since_Reset( void )		{ return FrameCounter; }
 	static	float						Get_Time_Since_Reset( void );
 
-	static	CProfileIterator *	Get_Iterator( void )	
-	{ 
-		
-		return new CProfileIterator( &Root ); 
+	static	CProfileIterator *	Get_Iterator( void )
+	{
+
+		return new CProfileIterator( &Root );
 	}
 	static	void						Release_Iterator( CProfileIterator * iterator ) { delete ( iterator); }
 
@@ -170,13 +170,13 @@ private:
 class	CProfileSample {
 public:
 	CProfileSample( const char * name )
-	{ 
-		CProfileManager::Start_Profile( name ); 
+	{
+		CProfileManager::Start_Profile( name );
 	}
 
-	~CProfileSample( void )					
-	{ 
-		CProfileManager::Stop_Profile(); 
+	~CProfileSample( void )
+	{
+		CProfileManager::Stop_Profile();
 	}
 };
 

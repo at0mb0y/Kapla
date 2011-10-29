@@ -672,7 +672,7 @@ typedef struct __GLIFunctionDispatchRec
 	void (*get_buffer_pointerv) (GLIContext ctx, GLenum target, GLenum pname, GLvoid **params);
 	void (*depth_bounds_EXT) (GLIContext ctx, GLclampd zmin, GLclampd zmax);
 	void (*draw_buffers_ARB) (GLIContext ctx, GLsizei n, const GLenum *bufs);
-	
+
 	GLboolean (*is_shader) (GLIContext ctx, GLuint shader);
 	GLboolean (*is_program) (GLIContext ctx, GLuint program);
 	void (*get_shaderiv) (GLIContext ctx, GLuint shader, GLenum pname, GLint *params);
@@ -682,7 +682,7 @@ typedef struct __GLIFunctionDispatchRec
 
 	void (*stencil_func_separate) (GLIContext ctx, GLenum face, GLenum func, GLint ref, GLuint mask);
 	void (*stencil_mask_separate) (GLIContext ctx, GLenum face, GLuint mask);
-	
+
 	void (*multi_draw_element_array_APPLE)(GLIContext ctx, GLenum mode, const GLint *first, const GLsizei *count, GLsizei primcount);
 	void (*multi_draw_range_element_array_APPLE)(GLIContext ctx, GLenum mode, GLuint start, GLuint end, const GLint *first, const GLsizei *count, GLsizei primcount);
 
@@ -707,7 +707,7 @@ typedef struct __GLIFunctionDispatchRec
 
 	void (*buffer_parameteri_APPLE) (GLIContext ctx, GLenum target, GLenum pname, GLint param);
 	void (*flush_mapped_buffer_range_APPLE) (GLIContext ctx, GLenum target, GLintptr offset, GLsizeiptr size);
-    
+
 	void (*program_env_parameters4fv_EXT)(GLIContext ctx, GLenum target, GLuint index, GLsizei count, const GLfloat *params);
 	void (*program_local_parameters4fv_EXT)(GLIContext ctx, GLenum target, GLuint index, GLsizei count, const GLfloat *params);
 
@@ -720,7 +720,7 @@ typedef struct __GLIFunctionDispatchRec
 	void (*framebuffer_texture_EXT)(GLIContext ctx, GLenum target, GLenum attachment, GLuint texture, GLint level);
 	void (*framebuffer_texture_layer_EXT)(GLIContext ctx, GLenum target, GLenum attachment, GLuint texture, GLint level, GLint layer);
 	void (*framebuffer_texture_face_EXT)(GLIContext ctx, GLenum target, GLenum attachment, GLuint texture, GLint level, GLenum face);
-	
+
 	/* transform feedback */
 	void (*bind_buffer_range_EXT)(GLIContext ctx, GLenum target, GLuint index, GLuint buffer, GLintptr offset, GLsizeiptr size);
 	void (*bind_buffer_offset_EXT)(GLIContext ctx, GLenum target, GLuint index, GLuint buffer, GLintptr offset);
@@ -729,7 +729,7 @@ typedef struct __GLIFunctionDispatchRec
 	void (*end_transform_feedback_EXT)(GLIContext ctx);
 	void (*transform_feedback_varyings_EXT)(GLIContext ctx, GLuint program, GLsizei count, const GLchar **varyings, GLenum bufferMode);
 	void (*get_transform_feedback_varying_EXT)(GLIContext ctx, GLuint program, GLuint index, GLsizei bufSize, GLsizei *length, GLsizei *size, GLenum *type, GLchar *name);
-	void (*get_integer_indexedv_EXT)(GLIContext ctx, GLenum param, GLuint index, GLint *values); 
+	void (*get_integer_indexedv_EXT)(GLIContext ctx, GLenum param, GLuint index, GLint *values);
 	void (*get_boolean_indexedv_EXT)(GLIContext ctx, GLenum param, GLuint index, GLboolean *values);
 
 	/* bindable uniform */
@@ -804,10 +804,10 @@ typedef struct __GLIFunctionDispatchRec
 	void (*end_conditional_render_NV)(GLIContext ctx);
 
 	void (*get_attached_shaders) (GLIContext ctx, GLuint program, GLsizei maxCount, GLsizei *count, GLuint *shaders);
-	
+
 	/* EXT_provoking_vertex */
 	void (*provoking_vertex_EXT) (GLIContext ctx, GLenum mode);
-	
+
 	/* ARB_instanced_arrays */
 	void (*vertex_attrib_divisor) (GLIContext ctx, GLuint index, GLuint divisor);
 	/* ARB_instanced_arrays and EXT_draw_instances */
@@ -836,8 +836,8 @@ typedef struct __GLIFunctionDispatchRec
 	void (*clear_bufferfv)(GLIContext ctx, GLenum buffer, GLint drawbuffer, const GLfloat *value);
 	void (*clear_bufferfi)(GLIContext ctx, GLenum buffer, GLint drawbuffer, GLfloat depth, GLint stencil);
 	const GLubyte* (*get_stringi)(GLIContext ctx, GLenum name, GLuint index);
-	
-	
+
+
 	/* ARB_sync */
 	GLsync (*fence_sync) (GLIContext ctx, GLenum condition, GLbitfield flags);
 	GLboolean (*is_sync) (GLIContext ctx, GLsync sync);
@@ -870,12 +870,12 @@ typedef struct __GLIFunctionDispatchRec
 	/* ARB_map_buffer_range (OpenGL 3.2) */
 	GLvoid *(*map_buffer_range) (GLIContext ctx, GLenum target, GLintptr offset, GLsizeiptr length, GLenum access);
 	void (*flush_mapped_buffer_range) (GLIContext ctx, GLenum target, GLintptr offset, GLsizeiptr length);
- 
+
 	/* ARB_timer_query (OpenGL 3.3) */
 	void (*query_counter) (GLIContext ctx, GLuint id, GLenum target);
 	void (*get_integer64i_v) (GLIContext ctx, GLenum target, GLuint index, GLint64 *data);
 	void (*get_buffer_parameteri64v)(GLIContext ctx, GLenum target, GLenum pname, GLint64 *params);
-	
+
 	/* ARB_sampler_object (OpenGL 3.3) */
 	void (*gen_samplers) (GLIContext ctx, GLsizei count, GLuint *samplers);
 	void (*delete_samplers) (GLIContext ctx, GLsizei count, const GLuint *samplers);
@@ -891,7 +891,7 @@ typedef struct __GLIFunctionDispatchRec
 	void (*get_sampler_parameterfv) (GLIContext ctx, GLuint sampler, GLenum pname, GLfloat *params);
 	void (*get_sampler_parameterIiv) (GLIContext ctx, GLuint sampler, GLenum pname, GLint *params);
 	void (*get_sampler_parameterIuiv) (GLIContext ctx, GLuint sampler, GLenum pname, GLuint *params);
- 
+
 } GLIFunctionDispatch;
 
 #ifdef __cplusplus

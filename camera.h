@@ -18,9 +18,9 @@ public:
     void set(double fromX, double fromY,double fromZ);
     void setByPolar(float eyeRadius, float radianXY, float radianZ);
     void display();
-    
+
     //idéalement il faudrait que en fonction du point de vue de la caméra elle zoom et dézome pour voir l'ensemble des kapla
-    
+
     //en fonction du point de vue il ya un plan invisible sur lequel se dépace le curseur
     void extendScene(float nX,float mX, float nY, float mY);
     void updateProjection();
@@ -42,9 +42,9 @@ private:
     double dist;
     const float PI;
     int m_upX,m_upY,m_upZ;
-    
-    
-    
+
+
+
 };
 
 

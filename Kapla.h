@@ -19,7 +19,7 @@ class Kapla
     void delKapla(btDiscreteDynamicsWorld &myWorld);
     void affiche();
 
-	
+
 	private:
     int m_id;
     float angl;
@@ -30,18 +30,18 @@ class Kapla
     btScalar mass;
     // Position, orientation.
     btTransform m_Transform;
-    
+
     // btDefaultMotionState fournit une implémentation pour synchroniser les transformations.
     btDefaultMotionState *m_MotionState;
-    
+
     // Une matrice OpenGL, pour récupérer la position, rotation d'un objet.
     btScalar	matrix[16];
-    
+
     // Le corps d'une boite et de notre sol.
     // btRigidBody est la classe principale des objets rigides
     btRigidBody *m_body;
 	btCollisionShape *m_shape;
-	
+
 };
 
 #endif

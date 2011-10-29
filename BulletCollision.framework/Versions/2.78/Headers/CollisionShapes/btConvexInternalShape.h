@@ -4,8 +4,8 @@ Copyright (c) 2003-2009 Erwin Coumans  http://bulletphysics.org
 
 This software is provided 'as-is', without any express or implied warranty.
 In no event will the authors be held liable for any damages arising from the use of this software.
-Permission is granted to anyone to use this software for any purpose, 
-including commercial applications, and to alter it and redistribute it freely, 
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it freely,
 subject to the following restrictions:
 
 1. The origin of this software must not be misrepresented; you must not claim that you wrote the original software. If you use this software in a product, an acknowledgment in the product documentation would be appreciated but is not required.
@@ -30,7 +30,7 @@ class btConvexInternalShape : public btConvexShape
 	btVector3	m_localScaling;
 
 	btVector3	m_implicitShapeDimensions;
-	
+
 	btScalar	m_collisionMargin;
 
 	btScalar	m_padding;
@@ -39,7 +39,7 @@ class btConvexInternalShape : public btConvexShape
 
 public:
 
-	
+
 
 	virtual ~btConvexInternalShape()
 	{
@@ -69,17 +69,17 @@ public:
 	}
 
 
-	
+
 	virtual void getAabbSlow(const btTransform& t,btVector3& aabbMin,btVector3& aabbMax) const;
 
 
 	virtual void	setLocalScaling(const btVector3& scaling);
-	virtual const btVector3& getLocalScaling() const 
+	virtual const btVector3& getLocalScaling() const
 	{
 		return m_localScaling;
 	}
 
-	const btVector3& getLocalScalingNV() const 
+	const btVector3& getLocalScalingNV() const
 	{
 		return m_localScaling;
 	}
@@ -102,7 +102,7 @@ public:
 	{
 		return 0;
 	}
-	
+
 	virtual void	getPreferredPenetrationDirection(int index, btVector3& penetrationVector) const
 	{
 		(void)penetrationVector;
@@ -115,7 +115,7 @@ public:
 	///fills the dataBuffer and returns the struct name (and 0 on failure)
 	virtual	const char*	serialize(void* dataBuffer, btSerializer* serializer) const;
 
-	
+
 };
 
 ///do not change those serialization structures, it requires an updated sBulletDNAstr/sBulletDNAstr64
@@ -126,7 +126,7 @@ struct	btConvexInternalShapeData
 	btVector3FloatData	m_localScaling;
 
 	btVector3FloatData	m_implicitShapeDimensions;
-	
+
 	float			m_collisionMargin;
 
 	int	m_padding;
@@ -162,11 +162,11 @@ class btConvexInternalAabbCachingShape : public btConvexInternalShape
 	btVector3	m_localAabbMin;
 	btVector3	m_localAabbMax;
 	bool		m_isLocalAabbValid;
-	
+
 protected:
-					
+
 	btConvexInternalAabbCachingShape();
-	
+
 	void setCachedLocalAabb (const btVector3& aabbMin, const btVector3& aabbMax)
 	{
 		m_isLocalAabbValid = true;
@@ -188,9 +188,9 @@ protected:
 		btAssert(m_isLocalAabbValid);
 		btTransformAabb(m_localAabbMin,m_localAabbMax,margin,trans,aabbMin,aabbMax);
 	}
-		
+
 public:
-		
+
 	virtual void	setLocalScaling(const btVector3& scaling);
 
 	virtual void getAabb(const btTransform& t,btVector3& aabbMin,btVector3& aabbMax) const;

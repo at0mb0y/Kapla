@@ -61,7 +61,7 @@ typedef enum _CGLPixelFormatAttribute {
 	kCGLPFAVirtualScreenCount = 128,	/* number of virtual screens in this format     */
 
 /*
-	Note: 
+	Note:
 		kCGLPFARobust, kCGLPFAMPSafe and kCGLPFAMultiScreen attributes will be deprecated in 10.5
 		Applications with these attributes will continue to work but these are being
 		deprecated for new applications.
@@ -202,7 +202,7 @@ typedef enum _CGLError {
 } CGLError;
 
 
-/* 
+/*
 ** Buffer modes
 */
 #define kCGLMonoscopicBit   0x00000001
