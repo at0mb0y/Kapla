@@ -18,7 +18,7 @@ extern "C" {
         /* param is a pointer to a NULL-terminated C-style string. */
         /* Inserts a context-specific comment into the function trace stream. */
 	/* Availability: set only, get is ignored. */
-	
+
 #define kCGLCPDumpState ((CGLContextParameter)1233)
         /* param ignored.  Dumps all the gl state. */
 	/* Availability: set only, get is ignored. */
@@ -40,12 +40,12 @@ extern "C" {
         /* param is a pointer to a NULL-terminated C-style string. */
 	/* Inserts a comment in the trace steam that applies to all contexts. */
 	/* Availability: set only, get is ignored. */
-	
+
 #define kCGLGOEnableFunctionTrace ((CGLGlobalOption)1507)
         /* param is GL_TRUE or GL_FALSE */
         /* Turns GL function call tracing on and off */
 	/* Availability: set and get */
-	
+
 #define kCGLGOEnableFunctionStatistics ((CGLGlobalOption)1508)
         /* param is GL_TRUE or GL_FALSE */
         /* Turns GL function counter on and off */

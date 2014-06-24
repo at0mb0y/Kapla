@@ -65,12 +65,12 @@ struct	btSparseSdf
 	// Fields
 	//
 
-	btAlignedObjectArray<Cell*>		cells;	
+	btAlignedObjectArray<Cell*>		cells;
 	btScalar						voxelsz;
 	int								puid;
 	int								ncells;
 	int								nprobes;
-	int								nqueries;	
+	int								nqueries;
 
 	//
 	// Methods
@@ -80,7 +80,7 @@ struct	btSparseSdf
 	void					Initialize(int hashsize=2383)
 	{
 		cells.resize(hashsize,0);
-		Reset();		
+		Reset();
 	}
 	//
 	void					Reset()
@@ -125,8 +125,8 @@ struct	btSparseSdf
 		//printf("GC[%d]: %d cells, PpQ: %f\r\n",puid,ncells,nprobes/(btScalar)nqueries);
 		nqueries=1;
 		nprobes=1;
-		++puid;	///@todo: Reset puid's when int range limit is reached	*/ 
-		/* else setup a priority list...						*/ 
+		++puid;	///@todo: Reset puid's when int range limit is reached	*/
+		/* else setup a priority list...						*/
 	}
 	//
 	int						RemoveReferences(btCollisionShape* pcs)
@@ -156,7 +156,7 @@ struct	btSparseSdf
 		btVector3& normal,
 		btScalar margin)
 	{
-		/* Lookup cell			*/ 
+		/* Lookup cell			*/
 		const btVector3	scx=x/voxelsz;
 		const IntFrac	ix=Decompose(scx.x());
 		const IntFrac	iy=Decompose(scx.y());
@@ -179,7 +179,7 @@ struct	btSparseSdf
 		}
 		if(!c)
 		{
-			++nprobes;		
+			++nprobes;
 			++ncells;
 			c=new Cell();
 			c->next=root;root=c;
@@ -189,7 +189,7 @@ struct	btSparseSdf
 			BuildCell(*c);
 		}
 		c->puid=puid;
-		/* Extract infos		*/ 
+		/* Extract infos		*/
 		const int		o[]={	ix.i,iy.i,iz.i};
 		const btScalar	d[]={	c->d[o[0]+0][o[1]+0][o[2]+0],
 			c->d[o[0]+1][o[1]+0][o[2]+0],
@@ -199,7 +199,7 @@ struct	btSparseSdf
 			c->d[o[0]+1][o[1]+0][o[2]+1],
 			c->d[o[0]+1][o[1]+1][o[2]+1],
 			c->d[o[0]+0][o[1]+1][o[2]+1]};
-		/* Normal	*/ 
+		/* Normal	*/
 #if 1
 		const btScalar	gx[]={	d[1]-d[0],d[2]-d[3],
 			d[5]-d[4],d[6]-d[7]};
@@ -217,7 +217,7 @@ struct	btSparseSdf
 #else
 		normal		=	btVector3(d[1]-d[0],d[3]-d[0],d[4]-d[0]).normalized();
 #endif
-		/* Distance	*/ 
+		/* Distance	*/
 		const btScalar	d0=Lerp(Lerp(d[0],d[1],ix.f),
 			Lerp(d[3],d[2],ix.f),iy.f);
 		const btScalar	d1=Lerp(Lerp(d[4],d[5],ix.f),
@@ -264,7 +264,7 @@ struct	btSparseSdf
 	static inline IntFrac	Decompose(btScalar x)
 	{
 		/* That one need a lot of improvements...	*/
-		/* Remove test, faster floor...				*/ 
+		/* Remove test, faster floor...				*/
 		IntFrac			r;
 		x/=CELLSIZE;
 		const int		o=x<0?(int)(-x+1):0;
@@ -285,7 +285,7 @@ struct	btSparseSdf
 	static inline unsigned int	Hash(int x,int y,int z,btCollisionShape* shape)
 	{
 		struct btS
-		{ 
+		{
 			int x,y,z;
 			void* p;
 		};

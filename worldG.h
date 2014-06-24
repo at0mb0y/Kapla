@@ -6,7 +6,7 @@
 
 class WorldGenerator
 {
-	
+
 };
 
 #endif

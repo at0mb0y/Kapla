@@ -17,21 +17,21 @@ extern "C" {
 ** this file except in compliance with the License. You may obtain a copy
 ** of the License at Silicon Graphics, Inc., attn: Legal Services, 1600
 ** Amphitheatre Parkway, Mountain View, CA 94043-1351, or at:
-** 
+**
 ** http://oss.sgi.com/projects/FreeB
-** 
+**
 ** Note that, as provided in the License, the Software is distributed on an
 ** "AS IS" basis, with ALL EXPRESS AND IMPLIED WARRANTIES AND CONDITIONS
 ** DISCLAIMED, INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTIES AND
 ** CONDITIONS OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A
 ** PARTICULAR PURPOSE, AND NON-INFRINGEMENT.
-** 
+**
 ** Original Code. The Original Code is: OpenGL Sample Implementation,
 ** Version 1.2.1, released January 26, 2000, developed by Silicon Graphics,
 ** Inc. The Original Code is Copyright (c) 1991-2000 Silicon Graphics, Inc.
 ** Copyright in any portions created by third parties is as indicated
 ** elsewhere herein. All Rights Reserved.
-** 
+**
 ** Additional Notice Provisions: This software was created using the
 ** OpenGL(R) version 1.2.1 Sample Implementation published by SGI, but has
 ** not been independently verified as being compliant with the OpenGL(R)
@@ -41,8 +41,8 @@ extern "C" {
 // switches to providing function pointers
 //#define GL_GLEXT_FUNCTION_POINTERS 1
 
-#ifndef __gltypes_h_	
-	
+#ifndef __gltypes_h_
+
 typedef unsigned int GLenum;
 typedef unsigned char GLboolean;
 typedef unsigned int GLbitfield;
@@ -62,14 +62,14 @@ typedef void GLvoid;
 typedef long GLintptr;
 typedef long GLsizeiptr;
 
-	
+
 #ifndef GL_TYPEDEFS_2_0
 #define GL_TYPEDEFS_2_0
 typedef char GLchar;
 #endif
 
 #endif
-	
+
 #ifndef GL_GLEXT_LEGACY
 #include <OpenGL/glext.h>
 #endif
@@ -1610,7 +1610,7 @@ typedef char GLchar;
 #define GL_FOG_COORD_SRC                  0x8450
 #define GL_FOG_COORD                      0x8451
 #define GL_FRAGMENT_DEPTH                 0x8452
-#define GL_CURRENT_FOG_COORD              0x8453  
+#define GL_CURRENT_FOG_COORD              0x8453
 #define GL_FOG_COORD_ARRAY_TYPE           0x8454
 #define GL_FOG_COORD_ARRAY_STRIDE         0x8455
 #define GL_FOG_COORD_ARRAY_POINTER        0x8456
@@ -1619,7 +1619,7 @@ typedef char GLchar;
 /* Obsolete */
 #define GL_FOG_COORDINATE_SOURCE          0x8450
 #define GL_FOG_COORDINATE                 0x8451
-#define GL_CURRENT_FOG_COORDINATE         0x8453  
+#define GL_CURRENT_FOG_COORDINATE         0x8453
 #define GL_FOG_COORDINATE_ARRAY_TYPE      0x8454
 #define GL_FOG_COORDINATE_ARRAY_STRIDE    0x8455
 #define GL_FOG_COORDINATE_ARRAY_POINTER   0x8456
@@ -2229,9 +2229,9 @@ typedef void (* glMultiTexCoord4sProcPtr) (GLenum target, GLshort s, GLshort t, 
 typedef void (* glMultiTexCoord4svProcPtr) (GLenum target, const GLshort *v);
 
 typedef void (* glFogCoordfProcPtr) (GLfloat coord);
-typedef void (* glFogCoordfvProcPtr) (const GLfloat *coord);  
+typedef void (* glFogCoordfvProcPtr) (const GLfloat *coord);
 typedef void (* glFogCoorddProcPtr) (GLdouble coord);
-typedef void (* glFogCoorddvProcPtr) (const GLdouble *coord);   
+typedef void (* glFogCoorddvProcPtr) (const GLdouble *coord);
 typedef void (* glFogCoordPointerProcPtr) (GLenum type, GLsizei stride, const GLvoid *pointer);
 
 typedef void (* glSecondaryColor3bProcPtr) (GLbyte red, GLbyte green, GLbyte blue);
@@ -2252,9 +2252,9 @@ typedef void (* glSecondaryColor3usProcPtr) (GLushort red, GLushort green, GLush
 typedef void (* glSecondaryColor3usvProcPtr) (const GLushort *v);
 typedef void (* glSecondaryColorPointerProcPtr) (GLint size, GLenum type, GLsizei stride, const GLvoid *pointer);
 
-typedef void (* glPointParameterfProcPtr) (GLenum pname, GLfloat param); 
+typedef void (* glPointParameterfProcPtr) (GLenum pname, GLfloat param);
 typedef void (* glPointParameterfvProcPtr) (GLenum pname, const GLfloat *params);
-typedef void (* glPointParameteriProcPtr) (GLenum pname, GLint param); 
+typedef void (* glPointParameteriProcPtr) (GLenum pname, GLint param);
 typedef void (* glPointParameterivProcPtr) (GLenum pname, const GLint *params);
 
 typedef void (* glBlendFuncSeparateProcPtr) (GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha);
@@ -2266,7 +2266,7 @@ typedef void (* glWindowPos2dProcPtr) (GLdouble x, GLdouble y);
 typedef void (* glWindowPos2dvProcPtr) (const GLdouble *v);
 typedef void (* glWindowPos2fProcPtr) (GLfloat x, GLfloat y);
 typedef void (* glWindowPos2fvProcPtr) (const GLfloat *v);
-typedef void (* glWindowPos2iProcPtr) (GLint x, GLint y); 
+typedef void (* glWindowPos2iProcPtr) (GLint x, GLint y);
 typedef void (* glWindowPos2ivProcPtr) (const GLint *v);
 typedef void (* glWindowPos2sProcPtr) (GLshort x, GLshort y);
 typedef void (* glWindowPos2svProcPtr) (const GLshort *v);
@@ -2829,9 +2829,9 @@ extern void glMultiTexCoord4s (GLenum target, GLshort s, GLshort t, GLshort r, G
 extern void glMultiTexCoord4sv (GLenum target, const GLshort *v);
 
 extern void glFogCoordf (GLfloat coord);
-extern void glFogCoordfv (const GLfloat *coord);  
+extern void glFogCoordfv (const GLfloat *coord);
 extern void glFogCoordd (GLdouble coord);
-extern void glFogCoorddv (const GLdouble *coord);   
+extern void glFogCoorddv (const GLdouble *coord);
 extern void glFogCoordPointer (GLenum type, GLsizei stride, const GLvoid *pointer);
 
 extern void glSecondaryColor3b (GLbyte red, GLbyte green, GLbyte blue);
@@ -2852,9 +2852,9 @@ extern void glSecondaryColor3us (GLushort red, GLushort green, GLushort blue);
 extern void glSecondaryColor3usv (const GLushort *v);
 extern void glSecondaryColorPointer (GLint size, GLenum type, GLsizei stride, const GLvoid *pointer);
 
-extern void glPointParameterf (GLenum pname, GLfloat param); 
+extern void glPointParameterf (GLenum pname, GLfloat param);
 extern void glPointParameterfv (GLenum pname, const GLfloat *params);
-extern void glPointParameteri (GLenum pname, GLint param); 
+extern void glPointParameteri (GLenum pname, GLint param);
 extern void glPointParameteriv (GLenum pname, const GLint *params);
 
 extern void glBlendFuncSeparate (GLenum srcRGB, GLenum dstRGB, GLenum srcAlpha, GLenum dstAlpha);
@@ -2866,7 +2866,7 @@ extern void glWindowPos2d (GLdouble x, GLdouble y);
 extern void glWindowPos2dv (const GLdouble *v);
 extern void glWindowPos2f (GLfloat x, GLfloat y);
 extern void glWindowPos2fv (const GLfloat *v);
-extern void glWindowPos2i (GLint x, GLint y); 
+extern void glWindowPos2i (GLint x, GLint y);
 extern void glWindowPos2iv (const GLint *v);
 extern void glWindowPos2s (GLshort x, GLshort y);
 extern void glWindowPos2sv (const GLshort *v);

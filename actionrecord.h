@@ -6,9 +6,9 @@
 
 class ActionRecord
 {
-    
+
 	public:
-	
+
     ActionRecord();
 	//ajoute un kapla dans la structure
 	void play();
@@ -18,10 +18,10 @@ class ActionRecord
 	void afficheRecordBar();
 	private:
 
-    
 
-	
-	
+
+
+
 };
 
 #endif

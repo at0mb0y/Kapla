@@ -58,7 +58,7 @@ extern "C" {
 
 #if GL_ARB_texture_rgb10_a2ui
 #define GL_RGB10_A2UI                       0x906F
-#endif 
+#endif
 
 #if GL_ARB_timer_query
 #define GL_TIME_ELAPSED                     0x88BF

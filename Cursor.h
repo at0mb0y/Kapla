@@ -11,7 +11,7 @@ class Cursor
 public:
     Cursor();
     void drawKapla(unsigned int x, unsigned int y, unsigned int z);
-	
+
     void set(int MouseX, int MouseY);
 private:
     int m_x;
@@ -19,7 +19,7 @@ private:
     int m_z;
     int m_ori;
     int m_sens;
-	
+
 };
 
 

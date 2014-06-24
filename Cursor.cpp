@@ -2,19 +2,19 @@
 
 Cursor::Cursor():m_x(0),m_y(0),m_z(0),m_ori(0),m_sens(0)
 {
-    
-    
-	
-	
+
+
+
+
 }
 
 void Cursor::set( int MouseX, int MouseY)
 {
-    
-	
+
+
     m_x = MouseX;
     m_y = MouseY;
-    
+
 }
 
 //  Une fonction pour afficher une boite à l'aide d'OpenGL
